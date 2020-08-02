@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+select::-ms-expand {
+    display: none;
+}
+
+
+select {
+    position: relative;
+    display: flex;
+    width: 15em;
+    height: 3em;
+    line-height: 3;
+    background:#340100;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+
+select {
+    flex: 1;
+    padding: 0 .5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #34495e;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+.select:hover::after {
+    color:green;
+}
+
+body {
+    background-color:#340100;
+    color: aliceblue;
+    font-family: 'Gloria Hallelujah';
+    padding: 0;
+    margin: 0;
+
+}
+
+.landing{
+    height: 100%;
+    background-image: url("../images/landing.jpg");
+    background-size: cover;
+    background-position:  center center;
+    background-repeat: no-repeat;
+   
+}
+#push {
+    padding-top: 50%;
+}
+
+.content {
+    position: absolute;
+    z-index: 1;
+    top: 3%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+}
+
+.content .title {
+    font-size: 2.8rem;
+    margin-top: 1rem;
+    color: black;
+}
+
+.big {
+    border: #FEFEFC solid 12px;
+    columns: #11760f;
+    font-size: xx-large;
+    text-align: center;
+}
+h3 {
+    color: #11760f;
+}
+
+h4 {
+    color: #11760f;
+    font-size: larger;
+    animation-delay: inherit;
+}
+
+h5 {
+    color: #11760f;
+    font-size: larger;
+    animation-delay: inherit;
+    font-family: 'Gloria Hallelujah';
+}
+
+.jumbotron {
+    background-image: url("../images/cartoon4.png");
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+p {
+    text-align: center;
+    font-size: x-large;
+    text-decoration: underline;
+    color:#11760f;
+    font-family: 'Gloria Hallelujah';
+}
+@media (min-width: 800px) and (max-width: 850px) {
+    html,
+    body,
+    
+
+    .navi {
+        font-size: 50px;
+    }
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+}
+
+#logo{
+height: 100%;
+background-position: left;
+position: relative;
+
+}
