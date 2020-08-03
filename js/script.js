@@ -60,7 +60,7 @@ $(document).ready(function () {
 
     var pizza1 = new Pizza("large", "crispy", "onion");
 
-    console.log(pizza1.size + " " + pizza1.SizePrice() + " ngoiri " + pizza1.ToppingsPrice() + pizza1.CrustPrice() + 200);
+    console.log(pizza1.size + " " + pizza1.SizePrice() + "  " + pizza1.ToppingsPrice() + pizza1.CrustPrice() + 200);
 
 
 
@@ -111,6 +111,6 @@ $("#do").click(function (event) {
     blanks.forEach(function (blank) {
         input.push($("#" + blank).val());
     });
-    alert("Welcome to Yammy Pizza Inn at Kasarani next to TRM Mall");
+    alert("welcome to buddy's pizza place");
     $("#do").reset();
 });
