@@ -1,175 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <title>PIZZA PALACE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BUDDY'S PIZZA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="../IP4/css/bootstrap.css">
+        <link rel="stylesheet" href="../IP4/css/styles.css">
+
 </head>
 
 <body>
 
-    <div class="card">
-        <div class="main">
-            <img src="image/lop.png">
-        </div>
-        <br>
-        <div class="block">
-            <h1> THE KIND OF CRUST</h1>
-        </div>
-        <div class="row">
-            <div class="column" id="cardss">
-                <div class="card">
-                    <img width="90%" src="image/imm.jpg">
-                    <div class="container">
-                        <h1>crispy</h1>
-                        <p>This pizza recipe comes out with a perfectly<br>foldable slice and a nice cracker thin
-                            crust.<br>I
-                            originally posted this recipe</p>
-                    </div>
-                </div>
-                <div class="card" id="oo">
-                    <img width="90%" src="image/tu.jpg">
-                    <div class="contain">
-                        <h1>stuffed</h1>
-                        <p>A stuffed pizza generally has much deeper topping density than any other type of pizza.<br>As
-                            with deep-dish pizza, a deep layer of dough forms.
-                    </div>
-                </div>
-                <div class="card" id="pp">
-                    <img width="80%" src="image/free.jpg">
-                    <div class="container">
-                        <h1>gluten-free</h1>
-                        <p>gluten free pizza dough is one of the single most important staples to have in your
-                            kitchen.<br> And it's so simple to make!</p>
-                    </div>
-                </div>
+    <body class="container">
+        <div class="page" id="front">
+            <div class="navbar" id="nav">
+                <a href="index.html">Home</a>
+                <a href="ourmenu.html" id="m" >Our Menu</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <br><br><br><br><br>
+
+            <h1>BUDDY'S PIZZA</h1>
+            <P>Best Services Best Pizza !!!</P><br><br><br><br><br><br><br><br><br><br>
+        
+        
+        
+
+            <div class="reach" id="cnt">
+                <footer class="reach-us text-center">
+                    <img src="../IP4/image/twitter.png" alt="twitter">
+                    <img src="../IP4/image/facebook.png" alt="facebook">
+                    <img src="../IP4/image/skype.png" alt="skype">
+                    <img src="../IP4/image/you_tube.png" alt="you_tube">
+
+                    <br>buddy's pizza<br>2020<br>
+                </footer>
             </div>
 
-            <br>
 
         </div>
-        <div class="omg">
-            <h1>Topping</h1>
-            <div class="row">
-                <div class="column" id="cardss">
-                    <div class="card">
-                        <img width="80%" src="image/peppr.jpg">
-                        <div class="container">
-                            <h1>Peppers</h1>
-                            <p>Green, red, yellow, or orange, peppers add a missing crunchy<br>element to chewy, cheesy
-                                pizza</p>
-                        </div>
 
-                    </div>
-                    <div class="card" id="ll">
-                        <img width="60%" src="image/onuio.jpg">
-                        <div class="container">
-                            <h1>Onions</h1>
-                            <p>Whether they crisp up in the oven or go on the pizza caramelized,<br> onions are a
-                                popular
-                                topping that
-                                add a<br> little salty or a little sweet, depending how they’re prepared</p>
-                        </div>
-                    </div>
-                    <div class="card" id="mm">
-                        <img width="60%" src="image/chicken.jpg">
-                        <div class="container">
-                            <h1>Chicken</h1>
-                            <p>The winner winner of weeknight meals goes well on pizzas, too! BBQ chicken, buffalo
-                                chicken, <br>and chicken bacon ranch are common pizza orders that contain this protein.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div id=project>
-            <form>
-                <div class="container">
-                    <div class=colomn>
-
-                        <div class="form-group">
-                            <label for="exampleFormControlSelect1">SIZE</label>
-                            <select class="form-control" id="os" style="width:20%;">
-                                <option> </option>
-                                <option value="70">Large 800$</option>
-                                <option value="60"> Medium 600$</option>
-                                <option value="50">Small 500$</option>
-
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label>crust</label>
-                            <select class="form-control" id="cr" style="width:40%;">
-                                <option> </option>
-                                <option value="40">crispy</option>
-                                <option value="10"> stuffed</option>
-                                <option value="35">gluten-free</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>TOPPING</label>
-                            <select class="form-control" id="pi" style="width:40%;">
-                                <option> </option>
-                                <option value="20">onions</option>
-                                <option value="30"> mashroom</option>
-                                <option value="50">cheken</option>
-                                <option value="60">Pineapple</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label>quantity</label>
-                            <select class="text" id="adr" name="quantity" placeholder="" style="width:20%">
-                                <option></option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Delivery</label>
-                        <select class="form-control" id="op" style="width:40%;">
-                            <option value="30$">yes</option>
-                            <option value="0">No</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Total($):</label>
-                        <output id="result"></output>
-                    </div>
-                </div>
-
-                <div class="pizza palace">
-                    <div id="receivedpizza">
-
-                        <p>size of pizza:<em class="size of pizza"></em></p>
-                        <p>crust of pizza:<em class="crust of pizza"></em></p>
-                        <p>toppping of pizza:<em class="topping of pizza"></em></p>
-                        <p>price of pizza:<em class="price of pizza"></em></p>
-                        <p>quantity of pizza:<em class="quantity of pizza"></em></p>
-                    </div>
-                </div>
-                <button type="submit" id="sand">Checkout</button>
-        </div>
-    </div>
-    </form>
-
-    <ul id="done">
-        <li></li>
-    </ul>
-    <div id="solution">
-
-    </div>
-</body>
+       
+    </body>
 
 </html>
