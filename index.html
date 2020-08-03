@@ -1,143 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Buddy's Pizza</title>
-    <!--<img src="images/cartoon4.png" alt="tablogo">-->
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="bootstrap" href="../IP4/css/bootstrap.css">
-    <script src="../IP4/css/styles.css"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <title>PIZZA PALACE</title>
 </head>
 
 <body>
-    
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar"></nav>
-            <h1 id="navi" class="">Buddy<span id="spantext">'s</span>fancy pizza</h1>
-        </nav>
-        <div class="container-fluid">
-        <div class="landing">
-            <!--<div class="overlay">-->
-                <div id="push"></div>
-            <div class="content">
-                <div class="topleft">
-             <img src="images/cartoon 2.jpg" id="logo" alt="logo" width="150px" height="150px">
-            </div>
-                <div class="title">
-                    WELCOME TO Buddy's Pizza </div>
-                <div class="text">
 
+    <div class="card">
+        <div class="main">
+            <img src="image/lop.png">
+        </div>
+        <br>
+        <div class="block">
+            <h1> THE KIND OF CRUST</h1>
+        </div>
+        <div class="row">
+            <div class="column" id="cardss">
+                <div class="card">
+                    <img width="90%" src="image/imm.jpg">
+                    <div class="container">
+                        <h1>crispy</h1>
+                        <p>This pizza recipe comes out with a perfectly<br>foldable slice and a nice cracker thin
+                            crust.<br>I
+                            originally posted this recipe</p>
+                    </div>
+                </div>
+                <div class="card" id="oo">
+                    <img width="90%" src="image/tu.jpg">
+                    <div class="contain">
+                        <h1>stuffed</h1>
+                        <p>A stuffed pizza generally has much deeper topping density than any other type of pizza.<br>As
+                            with deep-dish pizza, a deep layer of dough forms.
+                    </div>
+                </div>
+                <div class="card" id="pp">
+                    <img width="80%" src="image/free.jpg">
+                    <div class="container">
+                        <h1>gluten-free</h1>
+                        <p>gluten free pizza dough is one of the single most important staples to have in your
+                            kitchen.<br> And it's so simple to make!</p>
+                    </div>
                 </div>
             </div>
-            </div>
+
+            <br>
 
         </div>
-        <div class="cafe">
-            <h1 class="big">The tastiest Pizza in town.</h1>
-            <p><strong>What can we get you today?</strong></p>
-
-        </div>
-            
-        <div class="jumbotron">
-
-
-            <div class="services">
-                <div class="row">
-                    <div class="col-md-4">
-
-                        <br>
-                        <h3>Size</h3>
-                        <select class="form-control size">
-                            <option label="Small" value="500">Small </option>
-                            <option label="Medium" value="700">Medium</option>
-                            <option label="Large" value="1000">Large</option>
-                            <option label="X-large" value="1200">X-large</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4">
-
-                        <br>
-                        <h3>Toppings</h3>
-                        <select class="form-control toppings">
-                            <option label="Olives" value="100">Olives</option>
-                            <option label="Cheese" value="50">Cheese</option>
-                            <option label="Pepperoni" value="80">Pepperoni</option>
-                            <option label="bacon" value="80">Bacon</option>
-                            <option label="chicken" value="70">Chicken</option>
-                            <option label="beef" value="60">Beef</option>
-                            <option label="veggie" value="70">Veggie</option>
-                            <option label="hawaiian" value="100">Hawaiian</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4">
-
-                        <br>
-                        <h3>Crust</h3>
-                        <select class="form-control crust">
-                            <option label="Stuffed" value="400">Stuffed</option>
-                            <option label="Gluten-Free" value="300">Gluten-Free</option>
-                            <option label="Crispy" value="500">Crispy</option>
-                            <option label="normal" value="200">Normal</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="text-center mt-5">
-                    <button class="btn btn-info order" type="submit">Order</button>
-                </div>
-                <table class="table mt-5">
-                    <thead>
-                        <tr>
-                            <th scope="col">Pizza size</th>
-                            <th scope="col">Order No.</th>
-                            <th scope="col">Toppings</th>
-                            <th scope="col">Crust</th>
-                            <th scope="col">Total</th>
-                        </tr>
-                    </thead>
-                    <div id="pizza">
-                        <tr>
-                            <th scope="row">1</th>
-                            <td id="size"></td>
-                            <td id="toppings"></td>
-                            <td class="crust"></td>
-                            <td class="total"></td>
-                        </tr>
-                    </div>
-                </table>
-
-                <div class="additional-buttons">
-                    <div class="text-center">
-                        <button class="btn btn-info add-pizza" type="submit">Add Another</button>
-                        <div class="additional-info">
-                            <h3>The total is: <span></span></h3>
-                            <h5> Do you want delivery?.... it costs an additional <em>100</em></h5>
-                            <h4 id="no">Your order will be ready after 10 minutes and you can pick it in Buddy's pizza place.
-                            </h4>
-                            <h4 id="yes">Your order has been received! We are dispatching our rider to <span></span>
-                            </h4>
-                            <div class="location text-center">
-                                <input type="text" size="30" id="name" placeholder="Where do you live?" />
-                                <button class="btn btn-info complete" type="submit">Complete</button>
-                            </div>
+        <div class="omg">
+            <h1>Topping</h1>
+            <div class="row">
+                <div class="column" id="cardss">
+                    <div class="card">
+                        <img width="80%" src="image/peppr.jpg">
+                        <div class="container">
+                            <h1>Peppers</h1>
+                            <p>Green, red, yellow, or orange, peppers add a missing crunchy<br>element to chewy, cheesy
+                                pizza</p>
                         </div>
-                        <br>
-                        <button class="btn btn-info yes" type="submit">Yes</button>
-                        <button class="btn btn-info no" type="submit">No</button>
+
                     </div>
-                    <div class="text-center pt-4">
-                        <button class="btn btn-info check-out" type="submit">Checkout</button>
+                    <div class="card" id="ll">
+                        <img width="60%" src="image/onuio.jpg">
+                        <div class="container">
+                            <h1>Onions</h1>
+                            <p>Whether they crisp up in the oven or go on the pizza caramelized,<br> onions are a
+                                popular
+                                topping that
+                                add a<br> little salty or a little sweet, depending how they’re prepared</p>
+                        </div>
                     </div>
+                    <div class="card" id="mm">
+                        <img width="60%" src="image/chicken.jpg">
+                        <div class="container">
+                            <h1>Chicken</h1>
+                            <p>The winner winner of weeknight meals goes well on pizzas, too! BBQ chicken, buffalo
+                                chicken, <br>and chicken bacon ranch are common pizza orders that contain this protein.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+        </div>
+        <div id=project>
+            <form>
+                <div class="container">
+                    <div class=colomn>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">SIZE</label>
+                            <select class="form-control" id="os" style="width:20%;">
+                                <option> </option>
+                                <option value="70">Large 800$</option>
+                                <option value="60"> Medium 600$</option>
+                                <option value="50">Small 500$</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>crust</label>
+                            <select class="form-control" id="cr" style="width:40%;">
+                                <option> </option>
+                                <option value="40">crispy</option>
+                                <option value="10"> stuffed</option>
+                                <option value="35">gluten-free</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>TOPPING</label>
+                            <select class="form-control" id="pi" style="width:40%;">
+                                <option> </option>
+                                <option value="20">onions</option>
+                                <option value="30"> mashroom</option>
+                                <option value="50">cheken</option>
+                                <option value="60">Pineapple</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>quantity</label>
+                            <select class="text" id="adr" name="quantity" placeholder="" style="width:20%">
+                                <option></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Delivery</label>
+                        <select class="form-control" id="op" style="width:40%;">
+                            <option value="30$">yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Total($):</label>
+                        <output id="result"></output>
+                    </div>
+                </div>
+
+                <div class="pizza palace">
+                    <div id="receivedpizza">
+
+                        <p>size of pizza:<em class="size of pizza"></em></p>
+                        <p>crust of pizza:<em class="crust of pizza"></em></p>
+                        <p>toppping of pizza:<em class="topping of pizza"></em></p>
+                        <p>price of pizza:<em class="price of pizza"></em></p>
+                        <p>quantity of pizza:<em class="quantity of pizza"></em></p>
+                    </div>
+                </div>
+                <button type="submit" id="sand">Checkout</button>
         </div>
     </div>
-</body>
+    </form>
 
-<script src="../IP4/js/jquery.js"></script>
-<script src="../IP4/js/script.js"></script>
+    <ul id="done">
+        <li></li>
+    </ul>
+    <div id="solution">
+
+    </div>
+</body>
 
 </html>

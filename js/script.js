@@ -1,92 +1,58 @@
-$(document).ready(function() {
-    $("table").hide();
-    $(".additional-buttons").hide();
-    $(".additional-info").hide();
-    $(".btn.yes").hide();
-    $(".btn.no").hide();
-    $(".additional-info h4").hide();
+//business Logic
+function Order(size, crust, topping, quantity, price) {
+    this.sizeofpizza = size;
+    this.crustofpizza = crust;
+    this.toppingofpizza = topping;
+    this.priceofpizza = price;
+    this.quantityofpizza = quantity;
+}
+Order.prototype.allInformation = function () {
+    return this.sizeofpizza + "," + this.crustofpizza + "," + this.toppingofpizza + "," + this.priceofpizza + "," + this.quantityofpizza;
+}
 
-    $('.btn.order').click(function() {
-        var sizeOfPizza = $(".size option:selected").val();
-        var toppingsOfPizza = $(".toppings option:selected").val();
-        var crustOfPizza = $(".crust option:selected").val();
-        var total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
-        var order = 1;
-        var grandTotal = 0;
+$(document).ready(function () {
 
-        $("table").show();
-        $(".additional-buttons").show();
-        $(".btn.order").hide();
+    $('#project form').submit(function (event) {
 
-        $("#size").html($(".size option:selected").text() + " - " + sizeOfPizza);
-        $("#toppings").html($(".toppings option:selected").text() + " - " + toppingsOfPizza);
-        $("#crust").html($(".crust option:selected").text() + " - " + crustOfPizza);
-        $("#total").html(total);
+        var mop = parseInt($('#os').val())
+        console.log(mop);
+        var yop = parseInt($('#cr').val())
 
-        function Pizza(size, toppings, crust, total, orderNo) {
-            this.size = size;
-            this.toppings = toppings;
-            this.crust = crust;
-            this.total = total;
-            this.orderNo = orderNo;
-        }
-
-        $('.btn.add-pizza').click(function() {
-            var sizeOfPizza = $(".size option:selected").val();
-            var toppingsOfPizza = $(".toppings option:selected").val();
-            var crustOfPizza = $(".crust option:selected").val();
-            var total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
-            order = order + 1;
-            grandTotal = grandTotal + total;
+        console.log(yop);
+        var lol = parseInt($('#pi').val())
+        console.log(lol);
+        var sos = parseInt($('#adr').val())
+        console.log(sos);
+        var pop = parseInt($("#op").val())
+        console.log(pop);
+        console.log(mop + yop + lol + sos + pop);
+        var getlocation = prompt("tell your location:");
+        alert("will be delivered at" + " " + getlocation);
+        $("#result").text(mop + yop + lol + sos + pop);
+        // $('.form-group').on('select', function () {
+        //     var totalSum = 0;
+        //     $('.form-group').each(function () {
+        //         var selectVal = $(this).val();
+        //         if ($.isString(selectVal)) {
+        //             totalSum += parseFloat(selectVal);
+        //         }
 
 
-            var newPizza = new Pizza(sizeOfPizza, toppingsOfPizza, crustOfPizza, total, order);
+        //     });
 
-            var newRow = '<tr><th scope="row">' + newPizza.orderNo + '</th><td id="size">' + $(".size option:selected").text() + " - " + newPizza.size + '</td><td id="toppings">' + $(".toppings option:selected").text() + " - " + newPizza.toppings + '</td><td id="crust">' + $(".crust option:selected").text() + " - " + newPizza.crust + '</td><td id="total">' + newPizza.total + '</td></tr>'
-
-            $("#pizza").append(newRow);
-        });
-
-        $(".btn.check-out").click(function() {
-            $(".btn.add-pizza").hide();
-            $(".btn.check-out").hide();
-            $(".additional-info").show();
-            $(".btn.yes").show();
-            $(".btn.no").show();
-            $(".additional-info .location").hide();
-            grandTotal = grandTotal + total;
-
-            $(".additional-info h3 span").html(grandTotal);
-        });
-
-
-        $(".btn.yes").click(function() {
-            $(".additional-info h5").hide();
-            $(".btn.yes").hide();
-            $(".btn.no").hide();
-            $(".additional-info .location").show();
-            $(".additional-info h3 span").html(grandTotal + 100);
-        });
-
-        $(".btn.no").click(function() {
-            $(".additional-info h5").hide();
-            $(".btn.yes").hide();
-            $(".btn.no").hide();
-            $(".additional-info #no").show();
-        });
-        $(".btn.complete").click(function() {
-            var location = $(".additional-info .location input").val();
-            if (document.getElementById("name") == "") {
-                alert("input a location");
-            } else {
-                $(".additional-info #yes").show();
-                $(".additional-info .location").hide();
-                $(".additional-info #yes span").html(location);
-
-
-            }
-        });
+        // })
+        // var fol = parseInt(mop)
+        // var lop = parseInt(yop)
+        // var tol = parseInt(lol)
+        // var nam = parseInt(sos)
+        // var kell = parseInt(pop)
+        // console.log(mop);
+        // $('#result').val(totalSum);
         event.preventDefault();
     });
+    // $("#solution").show();
+
 
 });
+
+
