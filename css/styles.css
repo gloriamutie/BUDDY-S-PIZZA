@@ -18,7 +18,7 @@
 
 }
 #ourmenu {
-    background: url(image/pizza_fresca.jpg);
+    background: url(../image/pizza_fresca.jpg);
     background-size: 100% 100%;
     color: black;
     height: 400px;
@@ -26,7 +26,7 @@
     text-align: center;
 }
 #contact {
-    background: url(image/izza.jpeg);
+    background: url(../image/izza.jpeg);
     background-size: 100% 100%;
     color:blue;
     height: 400px;
@@ -41,7 +41,7 @@
     text-align: center;
 }
 #menu1 {
-    background: url(image/dark.jpeg);
+    background: url(../image/dark.jpeg);
     text-align: center;
     background-size: 100% 100%;
     height: auto;
