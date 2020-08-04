@@ -10,7 +10,7 @@
 }
 
 #front {
-    background: url(image/pizza.jpg);
+    background: url(../image/pizza.jpg);
     background-size: 100% 100%;
     color: black;
     height: 600px;
